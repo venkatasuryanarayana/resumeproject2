@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+<link rel="manifest" href="./icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      header{
+        background-color: skyblue;
+        padding: 1%;
+        margin: 1%;
+        border: 2px solid black;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+        font-size: 30px;
+        box-shadow: 2px 2px 2px black;
+      }
+      a img{
+        width: 10%;
+        display:block;
+        margin-left:auto;
+      }
+      .child img{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .child{
+        border: 2px solid #ddd;
+        width: 20%;
+        padding: 1%;
+        margin: 1%;
+        text-align: center;
+        border-radius: 10%;
+      }
+      .parent{
+        display: flex;
+        flex-direction: row;
+      }
+      h2,a{
+        font-size: 25px;
+        color: black;
+        word-wrap: break-word;
+      }
+      @media only screen and (min-width: 320px) and (max-width:480px) {
+
+        header{
+          background-color: skyblue;
+          padding: 1%;
+          margin: 1%;
+          border: 2px solid black;
+          text-align: center;
+          text-shadow: 2px 2px 2px black;
+          font-size: 30px;
+          box-shadow: 2px 2px 2px black;
+        }
+        a img{
+          width: 10%;
+          height: 10%;
+          display:block;
+          margin-left:auto;
+          margin-right: auto;
+        }
+        .child img{
+          width: 70%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .child{
+          border: 2px solid #ddd;
+          width: 90%;
+          padding: 1%;
+          background-color: skyblue;
+          margin: 1%;
+          text-align: center;
+          border-radius: 10%;
+        }
+        .parent{
+          display: flex;
+          flex-direction: column;
+        }
+        h2,a{
+          font-size: 25px;
+          color: black;
+        }
+      }
+      @media only screen and (min-width: 481px) and (max-width:769px) {
+
+        header{
+          background-color: skyblue;
+          padding: 1%;
+          margin: 1%;
+          border: 2px solid black;
+          text-align: center;
+          text-shadow: 2px 2px 2px black;
+          font-size: 30px;
+          box-shadow: 2px 2px 2px black;
+        }
+        a img{
+          width: 5%;
+          height: 10%;
+          display:block;
+          margin-left:auto;
+          margin-right: auto;
+        }
+        .child img{
+          width: 70%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .child{
+          border: 2px solid #ddd;
+          width: 25%;
+          padding: 1%;
+          background-color: skyblue;
+          margin: 1%;
+          text-align: center;
+          border-radius: 10%;
+        }
+        .parent{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        h2,a{
+          font-size: 25px;
+          color: black;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      Resume Builder
+    </header>
+    <a href="create.html"><img src="add.svg" alt="Display Picture"></a>
+    <div class="parent">
+
+    </div>
+    <script type="text/javascript" src="get.js">
+
+    </script>
+
+  </body>
+</html>
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js',{scope:'/'})
+  .then(function(reg) {
+    console.log("Registration Successfull"+reg.scope);
+  }).catch(function(error){
+    console.log("Registration failed"+error);
+  });
+}
+
+</script>
